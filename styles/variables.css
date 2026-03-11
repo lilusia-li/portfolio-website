@@ -2,9 +2,12 @@
   --color-accent: #c778dd;
   --color-white: #ffffff;
   --color-gray: #abb2bf;
+  --color-dark: #282c33;
 
   --transition-duration: 0.2s;
 
   --container-width: 64rem; /* 1024px */
   --container-padding-x: 1rem;
+
+  --gap-between-sections: 7rem; /* 112px */
 }

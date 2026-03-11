@@ -3,3 +3,12 @@
   padding-inline: var(--container-padding-x);
   margin-inline: auto;
 }
+
+body {
+  color: var(--color-gray);
+  background-color: var(--color-dark);
+  font-family: "Fira Code", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625;
+}
