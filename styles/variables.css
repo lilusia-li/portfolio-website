@@ -10,4 +10,7 @@
   --container-padding-x: 1rem;
 
   --gap-between-sections: 7rem; /* 112px */
+
+  --border-gray: 1px solid var(--color-gray);
+  --border-accent: 1px solid var(--border-accent);
 }
