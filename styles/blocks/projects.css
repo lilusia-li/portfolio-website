@@ -1,0 +1,35 @@
+.projects {
+  margin-block: var(--gap-between-sections);
+}
+
+.projects__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.projects__title {
+  position: relative;
+  padding-left: 1.25rem; /* 20px */
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: var(--line-height-base);
+}
+
+.projects__title::before {
+  position: absolute;
+  left: 0;
+  content: "#";
+  color: var(--color-accent);
+}
+
+.projects__title::after {
+  position: absolute;
+  content: "";
+  left: 12rem;
+  top: 50%;
+  width: 50%;
+  height: 1px;
+  background-color: var(--color-accent);
+}

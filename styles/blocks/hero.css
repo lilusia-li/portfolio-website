@@ -18,7 +18,7 @@
   color: var(--color-white);
   font-size: 2rem;
   font-weight: 600;
-  line-height: 1;
+  line-height: var(--line-height-base);
 }
 
 .hero__title_accent {
@@ -44,9 +44,9 @@
   content: "";
   width: 113px;
   height: 199px;
-  top: 7%;
-  right: -4%;
-  background: url(../../icons/logo_pink.svg) center / contain no-repeat;
+  top: 9%;
+  right: 0;
+  background: url(../../icons/logo_accent.svg) center / contain no-repeat;
   z-index: -10;
 }
 .hero__image-wrapper::after {

@@ -4,6 +4,9 @@
   --color-gray: #abb2bf;
   --color-dark: #282c33;
 
+  --color-accent-rgb: 199, 120, 221;
+  --color-gray-rgb: 171, 178, 191;
+
   --transition-duration: 0.2s;
 
   --container-width: 64rem; /* 1024px */
@@ -12,5 +15,8 @@
   --gap-between-sections: 7rem; /* 112px */
 
   --border-gray: 1px solid var(--color-gray);
-  --border-accent: 1px solid var(--border-accent);
+  --border-accent: 1px solid var(--color-accent);
+
+  --line-height-base: 1.25;
+  --line-height-p: 1.625;
 }
