@@ -1,0 +1,68 @@
+const projects = [
+  {
+    imageSrc: "./images/projects/future_tech.png",
+    imageAlt: "Future-tech wallpaper",
+    stack: ["HTML", "SCSS", "JS", "BEM", "Adaptive"],
+    name: "Future-tech",
+    description: "Website layout.",
+    openLink: "https://lilusia-li.github.io/future-tech",
+    githubLink: "https://github.com/lilusia-li/future-tech",
+  },
+  {
+    imageSrc: "./images/projects/test_project_sepium.png",
+    imageAlt: "Kitchen shop wallpaper",
+    stack: ["HTML", "SCSS", "JS", "Swiper", "Fancybox", "BEM", "Adaptive"],
+    name: "Kitchen shop",
+    description: "Test project for 'Sepium'.",
+    openLink: "https://lilusia-li.github.io/test-project-sepium",
+    githubLink: "https://github.com/lilusia-li/test-project-sepium",
+  },
+];
+
+const createProjectCard = function (project) {
+  const stackItems = project.stack
+    .map((tech) => `<li class="project-card__stack-item">${tech}</li>`)
+    .join("");
+
+  return `
+    <div class="slider__card project-card">
+      <img
+        class="project-card__image"
+        src="${project.imageSrc}"
+        alt="${project.imageAlt}"
+        width="330"
+        height="201"
+        loading="lazy"
+      />
+      <ul class="project-card__stack-list">
+        ${stackItems}
+      </ul>
+      <div class="project-card__specification">
+        <h3 class="project-card__name">${project.name}</h3>
+        <p class="project-card__description">${project.description}</p>
+        <div class="project-card__links">
+          <a
+            class="project-card__link project-card__link_accent"
+            href="${project.openLink}"
+            target="_blank"
+          >
+            Open
+          </a>
+          <a
+            class="project-card__link project-card__link_gray"
+            href="${project.githubLink}"
+            target="_blank"
+          >
+            Github
+          </a>
+        </div>
+      </div>
+    </div>
+  `;
+};
+
+export const projectsLayout = projects
+  .map((project) => {
+    return createProjectCard(project);
+  })
+  .join("");

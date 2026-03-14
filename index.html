@@ -7,6 +7,7 @@
     <title>Portfolio Li</title>
 
     <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./scripts/main.js" defer type="module"></script>
   </head>
   <body>
     <header class="header">
@@ -72,44 +73,8 @@
     <section class="projects">
       <div class="projects__content container">
         <h2 class="projects__title">projects</h2>
-        <div class="projects__slider slider">
-          <div class="slider__card project-card">
-            <img
-              class="project-card__image"
-              src="./images/projects/future_tech.png"
-              alt="Future-tech wallpaper"
-              width="330"
-              height="201"
-              loading="lazy"
-            />
-            <ul class="project-card__stack-list">
-              <li class="project-card__stack-item">HTML</li>
-              <li class="project-card__stack-item">SCSS</li>
-              <li class="project-card__stack-item">JS</li>
-              <li class="project-card__stack-item">BEM</li>
-              <li class="project-card__stack-item">Adaptive</li>
-            </ul>
-            <div class="project-card__specification">
-              <h3 class="project-card__name">Future-tech</h3>
-              <p class="project-card__description">Website layout</p>
-              <div class="project-card__links">
-                <a
-                  class="project-card__link project-card__link_accent"
-                  href="https://lilusia-li.github.io/future-tech/"
-                  target="_blank"
-                >
-                  Open
-                </a>
-                <a
-                  class="project-card__link project-card__link_gray"
-                  href="https://github.com/lilusia-li/future-tech"
-                  target="_blank"
-                >
-                  Github
-                </a>
-              </div>
-            </div>
-          </div>
+        <div class="projects__slider slider" id="projects-container">
+          <!-- Data from js -->
         </div>
       </div>
     </section>
