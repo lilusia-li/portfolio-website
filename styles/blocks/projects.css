@@ -1,7 +1,6 @@
 .projects {
   margin-block: var(--gap-between-sections);
   position: relative;
-  overflow-x: hidden;
 }
 
 .projects::after,
@@ -26,10 +25,11 @@
   content: "";
   position: absolute;
   top: 55%;
-  right: -6rem;
-  width: 9rem;
+  right: 0;
+  width: 4.25rem;
   height: 9rem;
-  background: url(../../icons/decoration/square.svg) center / contain no-repeat;
+  background: url(../../icons/decoration/square_projects.svg) right / contain
+    no-repeat;
 }
 
 .projects__content {
