@@ -1,21 +1,20 @@
 .project-card {
   --card-width: 330px;
+  --border-width: 1px;
 
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   width: var(--card-width);
-  gap: 1px;
-  padding: 1px;
+  gap: var(--border-width);
+  padding: var(--border-width);
   background-color: var(--color-gray);
 }
 
 .project-card__image,
-.project-card__stack-list,
 .project-card__specification {
   background-color: var(--color-dark);
 }
 
-.project-card__stack-list,
 .project-card__specification {
   padding: 1rem;
 }
@@ -23,12 +22,6 @@
 .project-card__image {
   width: var(--card-width);
   height: 201px;
-}
-
-.project-card__stack-list {
-  overflow: hidden;
-  display: flex;
-  column-gap: 0.5rem;
 }
 
 .project-card__specification {

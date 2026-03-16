@@ -1,0 +1,54 @@
+.stack {
+  position: relative;
+  --stack-list-padding: 1.5rem;
+
+  padding-inline: var(--stack-list-padding);
+  padding-block: 1rem;
+  background-color: var(--color-dark);
+}
+
+.stack__swiper.swiper {
+  position: relative;
+  width: calc(
+    var(--card-width) - 2 * var(--stack-list-padding) - 2 * var(--border-width)
+  );
+  background-color: var(--color-dark);
+}
+
+.stack__item.swiper-slide {
+  display: block;
+  width: auto; /* для slidesPerView: 'auto' */
+}
+
+.stack__button-prev.swiper-button-prev .swiper-navigation-icon,
+.stack__button-next.swiper-button-next .swiper-navigation-icon {
+  display: none;
+}
+
+.stack__button-prev.swiper-button-prev,
+.stack__button-next.swiper-button-next {
+  position: absolute;
+  margin: 0;
+  width: var(--stack-list-padding);
+  height: var(--stack-list-padding);
+  top: 50%;
+  opacity: 1;
+}
+.stack__button-prev.swiper-button-prev.swiper-button-disabled,
+.stack__button-next.swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+}
+
+.stack__button-prev.swiper-button-prev {
+  left: calc(-0.1 * var(--stack-list-padding));
+  transform: translateY(-50%) rotate(180deg);
+  background: url(../../icons/arrow_navigation_gray_right.svg) center / 12px
+    auto no-repeat;
+}
+
+.stack__button-next.swiper-button-next {
+  right: calc(-0.1 * var(--stack-list-padding));
+  transform: translateY(-50%);
+  background: url(../../icons/arrow_navigation_gray_right.svg) center / 12px
+    auto no-repeat;
+}
