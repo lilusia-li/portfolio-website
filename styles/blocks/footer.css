@@ -1,0 +1,80 @@
+.footer {
+  border-top: var(--border-gray);
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding-block: 2rem;
+}
+
+.footer__main-part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__hero {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.footer__hero-description {
+  color: var(--color-white);
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.footer__contacts-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+.footer__contacts-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.footer__contacts-item {
+  --icon-size: 1.5rem;
+
+  height: var(--icon-size);
+  position: relative;
+  padding-left: calc(var(--icon-size) + 0.5rem);
+}
+
+.footer__contacts-item::before {
+  content: "";
+  position: absolute;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  left: 0;
+}
+
+.footer__contacts-item_telegram::before {
+  background: url(../../icons/contacts/telegram.svg) center / contain no-repeat;
+}
+.footer__contacts-item_email::before {
+  background: url(../../icons/contacts/email.svg) center / contain no-repeat;
+}
+.footer__contacts-item_phone::before {
+  background: url(../../icons/contacts/phone.svg) center / contain no-repeat;
+}
+.footer__contacts-item_github::before {
+  background: url(../../icons/contacts/github.svg) center / contain no-repeat;
+}
+
+.footer__design {
+  align-self: center;
+}
+
+.footer__design-link {
+  color: white;
+}

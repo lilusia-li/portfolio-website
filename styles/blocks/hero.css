@@ -56,7 +56,8 @@
   height: 84px;
   top: 70%;
   left: -2%;
-  background: url(../../icons/dots_5_5.svg) center / contain no-repeat;
+  background: url(../../icons/decoration/dots_5_5.svg) center / contain
+    no-repeat;
 }
 
 .hero__img {
