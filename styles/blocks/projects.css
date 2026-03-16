@@ -1,5 +1,35 @@
 .projects {
   margin-block: var(--gap-between-sections);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.projects::after,
+.projects::before {
+  @media screen and (max-width: 75rem) {
+    display: none;
+  }
+}
+
+.projects::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 2.5rem;
+  height: 120px;
+  background: url(../../icons/decoration/dots_2_5.svg) center / contain
+    no-repeat;
+}
+
+.projects::after {
+  content: "";
+  position: absolute;
+  top: 55%;
+  right: -6rem;
+  width: 9rem;
+  height: 9rem;
+  background: url(../../icons/decoration/square.svg) center / contain no-repeat;
 }
 
 .projects__content {

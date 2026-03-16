@@ -23,6 +23,18 @@ export const projects = [
     openLink: "https://lilusia-li.github.io/test-project-sepium",
     githubLink: "https://github.com/lilusia-li/test-project-sepium",
   },
+  {
+    imageSrc: "./images/projects/test_project_sepium.png",
+    imageAlt: "Kitchen shop wallpaper",
+    stack: ["HTML", "CSS", "JS", "Swiper", "Fancybox", "BEM", "Adaptive"],
+    stackSwiperID: "stack-swiper-Kitchen-shop-2",
+    stackSwiperBtnPrevID: "stack-swiper-btn-prev-Kitchen-shop-2",
+    stackSwiperBtnNextID: "stack-swiper-btn-next-Kitchen-shop-2",
+    name: "Kitchen shop",
+    description: "Test project for 'Sepium'.",
+    openLink: "https://lilusia-li.github.io/test-project-sepium",
+    githubLink: "https://github.com/lilusia-li/test-project-sepium",
+  },
 ];
 
 const createProjectCard = function (project) {

@@ -64,7 +64,9 @@
   border: var(--border-accent);
 }
 .project-card__link_accent:hover {
-  background-color: rgba(var(--color-accent-rgb), 0.2);
+  @media (hover: hover) {
+    background-color: rgba(var(--color-accent-rgb), 0.2);
+  }
 }
 .project-card__link_accent::after {
   background: url(../../icons/arrow_top_right_accent.svg) center / contain
@@ -75,7 +77,9 @@
   border: var(--border-gray);
 }
 .project-card__link_gray:hover {
-  background-color: rgba(var(--color-gray-rgb), 0.2);
+  @media (hover: hover) {
+    background-color: rgba(var(--color-gray-rgb), 0.2);
+  }
 }
 .project-card__link_gray::after {
   background: url(../../icons/arrow_top_right_gray.svg) center / contain
