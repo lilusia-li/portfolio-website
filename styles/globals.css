@@ -4,6 +4,10 @@
   margin-inline: auto;
 }
 
+html {
+  scroll-padding-top: 100px; /* высота хедера */
+}
+
 body {
   color: var(--color-gray);
   background-color: var(--color-dark);

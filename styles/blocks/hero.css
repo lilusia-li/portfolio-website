@@ -1,5 +1,6 @@
 .hero {
   margin-block: var(--gap-between-sections);
+  margin-top: calc(2 * var(--gap-between-sections));
 }
 .hero__content {
   display: flex;

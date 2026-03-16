@@ -13,7 +13,7 @@
     <script src="./scripts/main.js" defer type="module"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__content container">
         <a href="/" class="header__logo-link">
           <img
@@ -24,13 +24,14 @@
             height="21"
           />
         </a>
+
         <nav class="header__nav menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="" class="menu__link">main</a>
+              <a href="#me" class="menu__link">me</a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">projects</a>
+              <a href="#projects" class="menu__link">projects</a>
             </li>
             <!-- <li class="menu__item">
               <a href="" class="menu__link">skills</a>
@@ -45,7 +46,7 @@
         </nav>
       </div>
     </header>
-    <section class="hero">
+    <section class="hero" id="me">
       <div class="hero__content container">
         <div class="hero__text-part">
           <h1 class="hero__title">
@@ -74,7 +75,7 @@
       </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="projects__content container">
         <h2 class="projects__title">projects</h2>
         <div class="projects__slider slider" id="projects-container">
