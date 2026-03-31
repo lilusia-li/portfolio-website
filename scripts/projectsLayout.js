@@ -7,7 +7,6 @@ export const projects = [
     stackSwiperBtnPrevID: "stack-swiper-btn-prev-Future-tech",
     stackSwiperBtnNextID: "stack-swiper-btn-next-Future-tech",
     name: "Future-tech",
-    description: "Website layout.",
     openLink: "https://lilusia-li.github.io/future-tech",
     githubLink: "https://github.com/lilusia-li/future-tech",
   },
@@ -19,21 +18,19 @@ export const projects = [
     stackSwiperBtnPrevID: "stack-swiper-btn-prev-Kitchen-shop",
     stackSwiperBtnNextID: "stack-swiper-btn-next-Kitchen-shop",
     name: "Kitchen shop",
-    description: "Test project for 'Sepium'.",
     openLink: "https://lilusia-li.github.io/test-project-sepium",
     githubLink: "https://github.com/lilusia-li/test-project-sepium",
   },
   {
-    imageSrc: "./images/projects/test_project_sepium.png",
-    imageAlt: "Kitchen shop wallpaper",
-    stack: ["HTML", "CSS", "JS", "Swiper", "Fancybox", "BEM", "Adaptive"],
-    stackSwiperID: "stack-swiper-Kitchen-shop-2",
-    stackSwiperBtnPrevID: "stack-swiper-btn-prev-Kitchen-shop-2",
-    stackSwiperBtnNextID: "stack-swiper-btn-next-Kitchen-shop-2",
-    name: "Kitchen shop",
-    description: "Test project for 'Sepium'.",
-    openLink: "https://lilusia-li.github.io/test-project-sepium",
-    githubLink: "https://github.com/lilusia-li/test-project-sepium",
+    imageSrc: "./images/projects/todo_react.png",
+    imageAlt: "Todo-list",
+    stack: ["React", "Tailwind", "LocalStorage", "BEM", "Adaptive"],
+    stackSwiperID: "stack-swiper-Todo-list",
+    stackSwiperBtnPrevID: "stack-swiper-btn-prev-Todo-list",
+    stackSwiperBtnNextID: "stack-swiper-btn-next-Todo-list",
+    name: "Todo-list",
+    openLink: "https://todo-react-two-delta.vercel.app/",
+    githubLink: "https://github.com/lilusia-li/todo-react",
   },
 ];
 
@@ -69,7 +66,6 @@ const createProjectCard = function (project) {
       </div>
       <div class="project-card__specification">
         <h3 class="project-card__name">${project.name}</h3>
-        <p class="project-card__description">${project.description}</p>
         <div class="project-card__links">
           <a
             class="project-card__link project-card__link_accent"
